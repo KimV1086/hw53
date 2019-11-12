@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  line-height: 1.3;
+  background: #cccccc;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.task-form {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-form input {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  border-radius: 2px;
+  outline: none;
+  font-size: 16px;
+}
+.task-form input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+  border: 1px solid rgba(0,0,0,.12);
+}
+.task-form input[type="button"] {
+  flex-basis: 140px;
+  color: #fff;
+  background: #42a5f5;
+}
+.btn {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 2px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background: #eee;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.btn-success {
+  color: #fff;
+  background-color: #26a69a;
+}
+.task-card {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  background-color: #26a69a;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.task-text {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.task-actions {
+  min-width: 140px;
+  text-align: right;
+}
+.task-status{
+  display: block;
+  opacity: 0.7;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.task-checkbox{
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.task-btn {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  box-shadow: none;
+  transition: all 0.2s
+}
+.task-btn:hover {
+  background: #fff;
+  color: #26a69a;
+}
+.task-card.done{
+  background-color: #b0bec5;
+  box-shadow: none;
+}
